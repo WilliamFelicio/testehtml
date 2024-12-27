@@ -1633,6 +1633,14 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </section>
 
 <!-- CTA Parceiros -->
+<style>
+    #form-contact input, 
+    #form-contact textarea {
+        color: #000 !important; /* Texto preto */
+        background-color: #fff; /* Fundo branco */
+        opacity: 1; 
+    }
+</style>
 
 <section id="contato">
     <div class="container">
@@ -1645,7 +1653,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
                 <input name="phone" type="tel" id="contact-phone" placeholder="Telefone" required class="w50">
                 <textarea name="message" id="contact-message" placeholder="Mensagem" required></textarea>
                 <div class="box-messages">
-                    <div class="tks-msg"><div class="cta red">Registrado com sucesso!</div></div>
+                    <div class="tks-msg"><div class="cta red">Enviado com sucesso!</div></div>
                     <button class="lien-button btn-send-contact">Enviar</button>
                 </div>
             </form>
