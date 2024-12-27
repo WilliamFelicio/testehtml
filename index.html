@@ -1,0 +1,1877 @@
+
+<!doctype html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!-- Google Tag Manager -->
+               
+        
+        <!-- teste html doctype -->
+        <meta charset="UTF-8">
+        <link rel="canonical" href="https://liencorretora.com.br/"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://primoratec.com.br/wp-content/themes/acstheme/assets/images/lien-favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+        <meta name="description" content="Lien Matriz">
+        <title>LIEN Corretora | Unid. Londrina</title>
+
+        <script>var H5Vars = { "url" : "https://primoratec.com.br", "dir" : "https://primoratec.com.br/wp-content/themes/acstheme", "ajax" : "https://primoratec.com.br/wp-admin/admin-ajax.php"};</script><meta name='robots' content='noindex, follow' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v24.0 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta property="og:locale" content="pt_BR" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Franquia - Franqueado - Lien Corretora" />
+	<meta property="og:url" content="https://primoratec.com.br/" />
+	<meta property="og:site_name" content="Franqueado - Lien Corretora" />
+	<meta property="article:modified_time" content="2024-06-18T16:50:40+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://primoratec.com.br/","url":"https://primoratec.com.br/","name":"Franquia - Franqueado - Lien Corretora","isPartOf":{"@id":"https://primoratec.com.br/#website"},"datePublished":"2024-03-07T00:37:50+00:00","dateModified":"2024-06-18T16:50:40+00:00","breadcrumb":{"@id":"https://primoratec.com.br/#breadcrumb"},"inLanguage":"pt-BR","potentialAction":[{"@type":"ReadAction","target":["https://primoratec.com.br/"]}]},{"@type":"BreadcrumbList","@id":"https://primoratec.com.br/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://primoratec.com.br/#website","url":"https://primoratec.com.br/","name":"Franqueado - Lien Corretora","description":"Só mais um site WordPress","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://primoratec.com.br/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"pt-BR"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"wpemoji":"https:\/\/primoratec.com.br\/wp-includes\/js\/wp-emoji.js?ver=6.5.3","twemoji":"https:\/\/primoratec.com.br\/wp-includes\/js\/twemoji.js?ver=6.5.3"}};
+/**
+ * @output wp-includes/js/wp-emoji-loader.js
+ */
+
+/**
+ * Emoji Settings as exported in PHP via _print_emoji_detection_script().
+ * @typedef WPEmojiSettings
+ * @type {object}
+ * @property {?object} source
+ * @property {?string} source.concatemoji
+ * @property {?string} source.twemoji
+ * @property {?string} source.wpemoji
+ * @property {?boolean} DOMReady
+ * @property {?Function} readyCallback
+ */
+
+/**
+ * Support tests.
+ * @typedef SupportTests
+ * @type {object}
+ * @property {?boolean} flag
+ * @property {?boolean} emoji
+ */
+
+/**
+ * IIFE to detect emoji support and load Twemoji if needed.
+ *
+ * @param {Window} window
+ * @param {Document} document
+ * @param {WPEmojiSettings} settings
+ */
+( function wpEmojiLoader( window, document, settings ) {
+	if ( typeof Promise === 'undefined' ) {
+		return;
+	}
+
+	var sessionStorageKey = 'wpEmojiSettingsSupports';
+	var tests = [ 'flag', 'emoji' ];
+
+	/**
+	 * Checks whether the browser supports offloading to a Worker.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @returns {boolean}
+	 */
+	function supportsWorkerOffloading() {
+		return (
+			typeof Worker !== 'undefined' &&
+			typeof OffscreenCanvas !== 'undefined' &&
+			typeof URL !== 'undefined' &&
+			URL.createObjectURL &&
+			typeof Blob !== 'undefined'
+		);
+	}
+
+	/**
+	 * @typedef SessionSupportTests
+	 * @type {object}
+	 * @property {number} timestamp
+	 * @property {SupportTests} supportTests
+	 */
+
+	/**
+	 * Get support tests from session.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @returns {?SupportTests} Support tests, or null if not set or older than 1 week.
+	 */
+	function getSessionSupportTests() {
+		try {
+			/** @type {SessionSupportTests} */
+			var item = JSON.parse(
+				sessionStorage.getItem( sessionStorageKey )
+			);
+			if (
+				typeof item === 'object' &&
+				typeof item.timestamp === 'number' &&
+				new Date().valueOf() < item.timestamp + 604800 && // Note: Number is a week in seconds.
+				typeof item.supportTests === 'object'
+			) {
+				return item.supportTests;
+			}
+		} catch ( e ) {}
+		return null;
+	}
+
+	/**
+	 * Persist the supports in session storage.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @param {SupportTests} supportTests Support tests.
+	 */
+	function setSessionSupportTests( supportTests ) {
+		try {
+			/** @type {SessionSupportTests} */
+			var item = {
+				supportTests: supportTests,
+				timestamp: new Date().valueOf()
+			};
+
+			sessionStorage.setItem(
+				sessionStorageKey,
+				JSON.stringify( item )
+			);
+		} catch ( e ) {}
+	}
+
+	/**
+	 * Checks if two sets of Emoji characters render the same visually.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 4.9.0
+	 *
+	 * @private
+	 *
+	 * @param {CanvasRenderingContext2D} context 2D Context.
+	 * @param {string} set1 Set of Emoji to test.
+	 * @param {string} set2 Set of Emoji to test.
+	 *
+	 * @return {boolean} True if the two sets render the same.
+	 */
+	function emojiSetsRenderIdentically( context, set1, set2 ) {
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+		context.fillText( set1, 0, 0 );
+		var rendered1 = new Uint32Array(
+			context.getImageData(
+				0,
+				0,
+				context.canvas.width,
+				context.canvas.height
+			).data
+		);
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, context.canvas.width, context.canvas.height );
+		context.fillText( set2, 0, 0 );
+		var rendered2 = new Uint32Array(
+			context.getImageData(
+				0,
+				0,
+				context.canvas.width,
+				context.canvas.height
+			).data
+		);
+
+		return rendered1.every( function ( rendered2Data, index ) {
+			return rendered2Data === rendered2[ index ];
+		} );
+	}
+
+	/**
+	 * Determines if the browser properly renders Emoji that Twemoji can supplement.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @private
+	 *
+	 * @param {CanvasRenderingContext2D} context 2D Context.
+	 * @param {string} type Whether to test for support of "flag" or "emoji".
+	 * @param {Function} emojiSetsRenderIdentically Reference to emojiSetsRenderIdentically function, needed due to minification.
+	 *
+	 * @return {boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( context, type, emojiSetsRenderIdentically ) {
+		var isIdentical;
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * Test for Transgender flag compatibility. Added in Unicode 13.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (white flag emoji + transgender symbol).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83C\uDFF3\uFE0F\u200D\u26A7\uFE0F', // as a zero-width joiner sequence
+					'\uD83C\uDFF3\uFE0F\u200B\u26A7\uFE0F' // separated by a zero-width space
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for UN flag compatibility. This is the least supported of the letter locale flags,
+				 * so gives us an easy test for full support.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly ([U] + [N]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83C\uDDFA\uD83C\uDDF3', // as the sequence of two code points
+					'\uD83C\uDDFA\u200B\uD83C\uDDF3' // as the two code points separated by a zero-width space
+				);
+
+				if ( isIdentical ) {
+					return false;
+				}
+
+				/*
+				 * Test for English flag compatibility. England is a country in the United Kingdom, it
+				 * does not have a two letter locale code but rather a five letter sub-division code.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (black flag emoji + [G] + [B] + [E] + [N] + [G]).
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					// as the flag sequence
+					'\uD83C\uDFF4\uDB40\uDC67\uDB40\uDC62\uDB40\uDC65\uDB40\uDC6E\uDB40\uDC67\uDB40\uDC7F',
+					// with each code point separated by a zero-width space
+					'\uD83C\uDFF4\u200B\uDB40\uDC67\u200B\uDB40\uDC62\u200B\uDB40\uDC65\u200B\uDB40\uDC6E\u200B\uDB40\uDC67\u200B\uDB40\uDC7F'
+				);
+
+				return ! isIdentical;
+			case 'emoji':
+				/*
+				 * Four and twenty blackbirds baked in a pie.
+				 *
+				 * To test for Emoji 15.0 support, try to render a new emoji: Blackbird.
+				 *
+				 * The Blackbird is a ZWJ sequence combining 🐦 Bird and ⬛ large black square.,
+				 *
+				 * 0x1F426 (\uD83D\uDC26) == Bird
+				 * 0x200D == Zero-Width Joiner (ZWJ) that links the code points for the new emoji or
+				 * 0x200B == Zero-Width Space (ZWS) that is rendered for clients not supporting the new emoji.
+				 * 0x2B1B == Large Black Square
+				 *
+				 * When updating this test for future Emoji releases, ensure that individual emoji that make up the
+				 * sequence come from older emoji standards.
+				 */
+				isIdentical = emojiSetsRenderIdentically(
+					context,
+					'\uD83D\uDC26\u200D\u2B1B', // as the zero-width joiner sequence
+					'\uD83D\uDC26\u200B\u2B1B' // separated by a zero-width space
+				);
+
+				return ! isIdentical;
+		}
+
+		return false;
+	}
+
+	/**
+	 * Checks emoji support tests.
+	 *
+	 * This function may be serialized to run in a Worker. Therefore, it cannot refer to variables from the containing
+	 * scope. Everything must be passed by parameters.
+	 *
+	 * @since 6.3.0
+	 *
+	 * @private
+	 *
+	 * @param {string[]} tests Tests.
+	 * @param {Function} browserSupportsEmoji Reference to browserSupportsEmoji function, needed due to minification.
+	 * @param {Function} emojiSetsRenderIdentically Reference to emojiSetsRenderIdentically function, needed due to minification.
+	 *
+	 * @return {SupportTests} Support tests.
+	 */
+	function testEmojiSupports( tests, browserSupportsEmoji, emojiSetsRenderIdentically ) {
+		var canvas;
+		if (
+			typeof WorkerGlobalScope !== 'undefined' &&
+			self instanceof WorkerGlobalScope
+		) {
+			canvas = new OffscreenCanvas( 300, 150 ); // Dimensions are default for HTMLCanvasElement.
+		} else {
+			canvas = document.createElement( 'canvas' );
+		}
+
+		var context = canvas.getContext( '2d', { willReadFrequently: true } );
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		var supports = {};
+		tests.forEach( function ( test ) {
+			supports[ test ] = browserSupportsEmoji( context, test, emojiSetsRenderIdentically );
+		} );
+		return supports;
+	}
+
+	/**
+	 * Adds a script to the head of the document.
+	 *
+	 * @ignore
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param {string} src The url where the script is located.
+	 *
+	 * @return {void}
+	 */
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+		script.src = src;
+		script.defer = true;
+		document.head.appendChild( script );
+	}
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	// Create a promise for DOMContentLoaded since the worker logic may finish after the event has fired.
+	var domReadyPromise = new Promise( function ( resolve ) {
+		document.addEventListener( 'DOMContentLoaded', resolve, {
+			once: true
+		} );
+	} );
+
+	// Obtain the emoji support from the browser, asynchronously when possible.
+	new Promise( function ( resolve ) {
+		var supportTests = getSessionSupportTests();
+		if ( supportTests ) {
+			resolve( supportTests );
+			return;
+		}
+
+		if ( supportsWorkerOffloading() ) {
+			try {
+				// Note that the functions are being passed as arguments due to minification.
+				var workerScript =
+					'postMessage(' +
+					testEmojiSupports.toString() +
+					'(' +
+					[
+						JSON.stringify( tests ),
+						browserSupportsEmoji.toString(),
+						emojiSetsRenderIdentically.toString()
+					].join( ',' ) +
+					'));';
+				var blob = new Blob( [ workerScript ], {
+					type: 'text/javascript'
+				} );
+				var worker = new Worker( URL.createObjectURL( blob ), { name: 'wpTestEmojiSupports' } );
+				worker.onmessage = function ( event ) {
+					supportTests = event.data;
+					setSessionSupportTests( supportTests );
+					worker.terminate();
+					resolve( supportTests );
+				};
+				return;
+			} catch ( e ) {}
+		}
+
+		supportTests = testEmojiSupports( tests, browserSupportsEmoji, emojiSetsRenderIdentically );
+		setSessionSupportTests( supportTests );
+		resolve( supportTests );
+	} )
+		// Once the browser emoji support has been obtained from the session, finalize the settings.
+		.then( function ( supportTests ) {
+			/*
+			 * Tests the browser support for flag emojis and other emojis, and adjusts the
+			 * support settings accordingly.
+			 */
+			for ( var test in supportTests ) {
+				settings.supports[ test ] = supportTests[ test ];
+
+				settings.supports.everything =
+					settings.supports.everything && settings.supports[ test ];
+
+				if ( 'flag' !== test ) {
+					settings.supports.everythingExceptFlag =
+						settings.supports.everythingExceptFlag &&
+						settings.supports[ test ];
+				}
+			}
+
+			settings.supports.everythingExceptFlag =
+				settings.supports.everythingExceptFlag &&
+				! settings.supports.flag;
+
+			// Sets DOMReady to false and assigns a ready function to settings.
+			settings.DOMReady = false;
+			settings.readyCallback = function () {
+				settings.DOMReady = true;
+			};
+		} )
+		.then( function () {
+			return domReadyPromise;
+		} )
+		.then( function () {
+			// When the browser can not render everything we need to load a polyfill.
+			if ( ! settings.supports.everything ) {
+				settings.readyCallback();
+
+				var src = settings.source || {};
+
+				if ( src.concatemoji ) {
+					addScript( src.concatemoji );
+				} else if ( src.wpemoji && src.twemoji ) {
+					addScript( src.twemoji );
+					addScript( src.wpemoji );
+				}
+			}
+		} );
+} )( window, document, window._wpemojiSettings );
+
+/* ]]> */
+</script>
+<link rel='stylesheet' id='acs-swipper-css' href='https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?ver=1.0' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='safe-svg-svg-icon-style-inline-css' type='text/css'>
+.safe-svg-cover{text-align:center}.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{height:100%;max-height:100%;max-width:100%;width:100%}
+
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/**
+ * These rules are needed for backwards compatibility.
+ * They should match the button element rules in the base theme.json file.
+ */
+.wp-block-button__link {
+	color: #ffffff;
+	background-color: #32373c;
+	border-radius: 9999px; /* 100% causes an oval, but any explicit but really high value retains the pill shape. */
+
+	/* This needs a low specificity so it won't override the rules from the button element if defined in theme.json. */
+	box-shadow: none;
+	text-decoration: none;
+
+	/* The extra 2px are added to size solids the same as the outline versions.*/
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+
+	font-size: 1.125em;
+}
+
+.wp-block-file__button {
+	background: #32373c;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='main-style-css' href='https://primoratec.com.br/wp-content/themes/acstheme/style.css?ver=1.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='acs-style-css' href='https://primoratec.com.br/wp-content/themes/acstheme/assets/css/styles.css?ver=1.0' type='text/css' media='screen' />
+<link rel="https://api.w.org/" href="https://primoratec.com.br/wp-json/" /><link rel="alternate" type="application/json" href="https://primoratec.com.br/wp-json/wp/v2/pages/1623" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://primoratec.com.br/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.5.3" />
+<link rel='shortlink' href='https://primoratec.com.br/' />
+<link rel="alternate" type="application/json+oembed" href="https://primoratec.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprimoratec.com.br%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://primoratec.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprimoratec.com.br%2F&#038;format=xml" />
+    </head>
+    <body>
+        <!-- Google Tag Manager (footer) -->
+        
+        
+            
+
+        <div class="nav-contact">
+            <div class="container">
+                <div class="left">
+                    <span><b>Unidade Lien | Eliezer Felicio</b></span>
+                    <span><b>Seg. à Sex., das 08h às 18h</b></span>
+                </div>
+                <div class="right">
+                    <span>
+                        <a href="mailto:eliezer.felicio@liencorretora.com.br">
+                            <span class="elementor-icon-list-icon">
+                                <i aria-hidden="true" class="far fa-envelope"></i>						
+                            </span>
+                            <span class="elementor-icon-list-text"><b>eliezer.felicio@liencorretora.com.br</b></span>
+                        </a>
+                    </span>
+                                        <span><a href="tel:3398606659"><span><b>(33) 9860-6659</b></span></a></span>
+                    <div class="social">
+                        <a href="https://www.facebook.com/LIENCorretoraoficial/">
+                            <img style="width: 16px;height: 16px;" src="https://primoratec.com.br/wp-content/themes/acstheme/assets/images/facebook.svg" alt="Facebook"/>
+                        </a>
+                        <a href="https://www.instagram.com/lien.corretoradeseguros/">
+                            <img style="width: 16px;height: 16px;" src="https://primoratec.com.br/wp-content/themes/acstheme/assets/images/instagram.svg" alt="Instagran"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="whats">
+                                <a href="https://api.whatsapp.com/send/?phone=553398606659&amp;text=Olá" target="_blank">
+                    <img style="width: 50px;height: 50px;" src="https://primoratec.com.br/wp-content/themes/acstheme/assets/images/whats.png" alt="Instagran"/>
+                </a>
+            </div>
+        </div>
+
+        <header class="lien-header">
+            <div class="container">
+                <div title="Menu" class="hamburguer"><span></span></div>
+                <a rel="canonical"href="https://primoratec.com.br" class="lien-logo-home">
+                    <img id="logo-lien-top" src="https://primoratec.com.br/wp-content/themes/acstheme/assets/images/lien-logo-top-1.svg" alt="Logo Lien">
+                </a>
+                <nav class="menu-desktop">
+                    <div class="menu-container">
+                        <ul>    
+                            <li class="menu-item">
+                                <a rel="canonical" href="#sprodutos" class="" rel="canonical" >Produtos</a>
+                            </li>                            
+                            <li class="menu-item">
+                                <a rel="canonical" href="#sservivos" class="" rel="canonical" >Serviços</a>
+                            </li>
+                            <li class="menu-item">
+                                <a rel="canonical"href="#squemsomos" class="" rel="canonical" >Sobre</a>
+                            </li> 
+                            <li class="menu-item">
+                                <a rel="canonical"href="#contato" class="">Contato</a>
+                            </li>                
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="menu-mobile">
+                    <div class="menu-container">
+                        <ul>
+                            <li class="menu-item">
+                                <a rel="canonical" href="#sprodutos" class="" rel="canonical" >Produtos</a>
+                            </li>                            
+                            <li class="menu-item">
+                                <a rel="canonical" href="#sservivos" class="" rel="canonical" >Serviços</a>
+                            </li>
+                            <li class="menu-item">
+                                <a rel="canonical"href="#squemsomos" class="" rel="canonical" >Sobre</a>
+                            </li> 
+                            <li class="menu-item">
+                                <a rel="canonical"href="#contato" class="">Contato</a>
+                            </li>              
+                        </ul>
+                    </div>
+                </nav>        
+            </div>
+        </header>
+
+    <section class="header-slide">
+        <div class="container full" >
+            <!-- Swipper aqui -->
+            <div class="swipper swipper-header">
+                <div class="swiper-wrapper">
+                     
+                        <div class="swiper-slide card-head-slide full" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://primoratec.com.br/wp-content/uploads/2024/06/BANNER-VIDA-2.png);"></div>
+                        <!-- Slide -->
+                     
+                        <div class="swiper-slide card-head-slide full" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://primoratec.com.br/wp-content/uploads/2024/06/BANNER-SAUDE-2.png);"></div>
+                        <!-- Slide -->
+                     
+                        <div class="swiper-slide card-head-slide full" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://primoratec.com.br/wp-content/uploads/2024/06/BANNER-RC-1.png);"></div>
+                        <!-- Slide -->
+                     
+                        <div class="swiper-slide card-head-slide full" style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(https://primoratec.com.br/wp-content/uploads/2024/05/banner-site-teste-2.png);"></div>
+                        <!-- Slide -->
+                                    </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Header Slide -->
+
+<!-- Header -->
+
+
+
+
+<section id='sprodutos' class="banner-rotate">
+    <div class="container">
+        <div class="box">
+            <h1 class="title empty-margin-top"><span>Produtos</span></h1>
+            <h2 class="subtitle">Conheça nossos produtos e serviços</h2>
+        </div>
+        
+        <div class="swiper productSwiper">
+            <div class="swiper-wrapper produtos-rotate">
+                 
+                    <div class="swiper-slide produto-card">
+                        <div class="box-content left">
+                            <div class="box-left">
+                                <div class="text-box">
+                                    <h2 class="title empty-margin-top t-center c_black_dark">Seguro Vida </h2>
+                                    <p>A proteção que não pode faltar. Esse seguro tem como objetivo a proteção econômica e financeira do segurado e de sua família.</p>
+                                                                        <a href="https://api.whatsapp.com/send/?phone=553398606659&amp;text=Olá" target="_blank" class="cta red">
+                                        Fazer cotação
+                                    </a>                                    
+                                </div>
+                            </div>
+                            <div class="box-rigth">
+                                <div class="box-img">
+                                    <img src="https://primoratec.com.br/wp-content/uploads/2024/04/Seguro-saude.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="swiper-slide produto-card">
+                        <div class="box-content right">
+                            <div class="box-left">
+                                <div class="text-box">
+                                    <h2 class="title empty-margin-top t-center c_black_dark">Seguro Auto </h2>
+                                    <p>Não deixe seu veículo desprotegido. O Seguro Auto é uma forma de proteção contra riscos que podem afetar o seu patrimônio e a sua segurança. </p>
+                                                                        <a href="https://api.whatsapp.com/send/?phone=553398606659&amp;text=Olá" target="_blank" class="cta red">
+                                        Fazer cotação
+                                    </a>                                    
+                                </div>
+                            </div>
+                            <div class="box-rigth">
+                                <div class="box-img">
+                                    <img src="https://primoratec.com.br/wp-content/uploads/2024/04/Seguro-auto.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="swiper-slide produto-card">
+                        <div class="box-content left">
+                            <div class="box-left">
+                                <div class="text-box">
+                                    <h2 class="title empty-margin-top t-center c_black_dark">Seguro Residencial </h2>
+                                    <p>Contratar um Seguro Residencial é viver com a tranquilidade de que seu patrimônio está protegido.</p>
+                                                                        <a href="https://api.whatsapp.com/send/?phone=553398606659&amp;text=Olá" target="_blank" class="cta red">
+                                        Fazer cotação
+                                    </a>                                    
+                                </div>
+                            </div>
+                            <div class="box-rigth">
+                                <div class="box-img">
+                                    <img src="https://primoratec.com.br/wp-content/uploads/2024/05/Casa-1-scaled.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="swiper-slide produto-card">
+                        <div class="box-content right">
+                            <div class="box-left">
+                                <div class="text-box">
+                                    <h2 class="title empty-margin-top t-center c_black_dark">Seguro Bike </h2>
+                                    <p>Este seguro além de cuidar do ciclista e da bicicleta, também pode oferecer coberturas para danos causados a terceiros.</p>
+                                                                        <a href="https://api.whatsapp.com/send/?phone=553398606659&amp;text=Olá" target="_blank" class="cta red">
+                                        Fazer cotação
+                                    </a>                                    
+                                </div>
+                            </div>
+                            <div class="box-rigth">
+                                <div class="box-img">
+                                    <img src="https://primoratec.com.br/wp-content/uploads/2024/05/Bike-2-scaled.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+</section>
+
+<section id="sservivos" class="card-prod-serv">
+    <div class="container">
+        <!-- Swiper -->
+        <div class="swiper swiper-grid-card">
+            <div class="swiper-wrapper">
+
+                 
+
+                    <div class="swiper-slide">
+                        <div class="card-serv">
+                            <div class="icn-text-top">
+                                                                    <img src="https://primoratec.com.br/wp-content/uploads/2024/05/Ativo-31.svg" alt="icn"> 
+                                                                <h3>Seguro Empresarial</h3>
+                            </div>
+                            <a class="lien-button" href="#contato">Saiba Mais</a>
+                        </div>
+                    </div>
+
+
+                 
+
+                    <div class="swiper-slide">
+                        <div class="card-serv">
+                            <div class="icn-text-top">
+                                                                    <img src="https://primoratec.com.br/wp-content/uploads/2024/05/Auto1.svg" alt="icn"> 
+                                                                <h3>Seguro Auto</h3>
+                            </div>
+                            <a class="lien-button" href="#contato">Saiba Mais</a>
+                        </div>
+                    </div>
+
+
+                 
+
+                    <div class="swiper-slide">
+                        <div class="card-serv">
+                            <div class="icn-text-top">
+                                                                    <img src="https://primoratec.com.br/wp-content/uploads/2023/10/MOTO.svg" alt="icn"> 
+                                                                <h3>Seguro Moto</h3>
+                            </div>
+                            <a class="lien-button" href="#contato">Saiba Mais</a>
+                        </div>
+                    </div>
+
+
+                 
+
+                    <div class="swiper-slide">
+                        <div class="card-serv">
+                            <div class="icn-text-top">
+                                                                    <img src="https://primoratec.com.br/wp-content/uploads/2024/05/Residencial1.svg" alt="icn"> 
+                                                                <h3>Seguro Residencial</h3>
+                            </div>
+                            <a class="lien-button" href="#contato">Saiba Mais</a>
+                        </div>
+                    </div>
+
+
+                 
+
+                    <div class="swiper-slide">
+                        <div class="card-serv">
+                            <div class="icn-text-top">
+                                                                    <img src="https://primoratec.com.br/wp-content/uploads/2024/05/Saude-21.svg" alt="icn"> 
+                                                                <h3>Seguro Vida</h3>
+                            </div>
+                            <a class="lien-button" href="#contato">Saiba Mais</a>
+                        </div>
+                    </div>
+
+
+                 
+
+                    <div class="swiper-slide">
+                        <div class="card-serv">
+                            <div class="icn-text-top">
+                                                                    <img src="https://primoratec.com.br/wp-content/uploads/2024/05/Agricola_1.svg" alt="icn"> 
+                                                                <h3>Seguro Agrícola</h3>
+                            </div>
+                            <a class="lien-button" href="#contato">Saiba Mais</a>
+                        </div>
+                    </div>
+
+
+                 
+
+                    <div class="swiper-slide">
+                        <div class="card-serv">
+                            <div class="icn-text-top">
+                                                                    <img src="https://primoratec.com.br/wp-content/uploads/2024/05/Viagem1.svg" alt="icn"> 
+                                                                <h3>Seguro Viagem</h3>
+                            </div>
+                            <a class="lien-button" href="#contato">Saiba Mais</a>
+                        </div>
+                    </div>
+
+
+                 
+
+                    <div class="swiper-slide">
+                        <div class="card-serv">
+                            <div class="icn-text-top">
+                                                                    <img src="https://primoratec.com.br/wp-content/uploads/2024/05/Frota1.svg" alt="icn"> 
+                                                                <h3>Seguro Frota</h3>
+                            </div>
+                            <a class="lien-button" href="#contato">Saiba Mais</a>
+                        </div>
+                    </div>
+
+
+                
+            </div>
+            <div class="box-pagination1">
+                <div class="box-internal">
+                    <div class="swiper-button-prev1"></div>
+                    <div class="swiper-button-next2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="squemsomos" class="quem-somos">    
+    <div class="container">
+        <div class="box">
+            <h1 class="title empty-margin-top"><span>Quem somos</span></h1>
+        </div>
+        <div class="block-text">
+            <div class="w-editor bold-c-primary">
+                <p>Somos uma franquia localizada em <strong>Londrina, PR</strong>. Nosso compromisso é oferecer uma consultoria especializada, que visa orientar e apresentar a proposta de <strong>seguro</strong> mais adequada às suas necessidades, com o melhor custo-benefício e uma apólice bem elaborada.</p>
+<p>A LIEN Corretora atua no mercado nacional desde 2010 e tem como missão proporcionar <strong>segurança e despreocupação</strong> aos seus clientes. Afinal, ter a certeza de que seus bens estão seguros é essencial para viver com<strong> mais tranquilidade</strong>, podendo dedicar seu tempo no que mais importa para você.</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-image">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="386 1359 170 170.1"><defs><style></style></defs><g transform="translate(386 1359)"><rect class="a" width="51.5" height="5" transform="translate(59.3 116.3)"/><rect class="a" width="51.5" height="5" transform="translate(59.3 48.8)"/><rect class="a" width="51.5" height="5" transform="translate(59.3 82.3)"/><path class="a" d="M85,4a81,81,0,1,0,81,81A81.174,81.174,0,0,0,85,4m0,166.1A85.05,85.05,0,1,1,170,85a85.121,85.121,0,0,1-85,85.1"/></g></svg>
+    </div>
+</section>
+<!-- Quem somos -->
+
+<section class="parceiros">    
+    <div class="container">
+        <div class="box">
+            <h1 class="title empty-margin-top"><span>Parceiros</span></h1>
+            <h2 class="subtitle">Conheça quem são nossos parceiros</h2>
+        </div>
+
+                <div class="swiper mySwiper box-parceiros">
+            <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/aig-2.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 726 6130</p>
+                            </div>
+                            <a href="https://www.aig.com.br/quem-somos-contato">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/10/Sem-Titulo-1.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 942 2746</p>
+                            </div>
+                            <a href="https://akadseguros.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/alfa-3.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 888 2532</p>
+                            </div>
+                            <a href="https://wwws.alfaseguradora.com.br/Portal/Auto/Assistencia">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/lien-logo-alianz.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 013 0700</p>
+                            </div>
+                            <a href="https://www.allianz.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/tokio-marine-copiar.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>11 3065 2260</p>
+                            </div>
+                            <a href="https://www.allianz-trade.com/pt_BR/seguro-de-credito/seguro-de-credito-google-ads.html?_bt=678340869051&#038;_bk=allianz%20trade&#038;_bm=p&#038;_bn=g&#038;_bg=160649397731&#038;gad_source=1&#038;gclid=Cj0KCQjwiOy1BhDCARIsADGvQnCZ4akUIsf_fmv8ICX-kVx3gEy2ogJpnb6_atbKYkgDaQpe8T4IKEEaAglyEALw_wcB">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/americanlife-webp.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 755 5985</p>
+                            </div>
+                            <a href="https://www.alseg.com.br/novosite/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/amil-logo.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 021 2583</p>
+                            </div>
+                            <a href="http://www.amil.com.br/institucional/#/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/Aruna-seguradora-webp.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 701 4887</p>
+                            </div>
+                            <a href="https://aruanaseguradora.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2024/05/ASAS.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>+55 (11) 3081-1451</p>
+                            </div>
+                            <a href="https://asasinsurance.com/contato/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/axa.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 292 4357</p>
+                            </div>
+                            <a href="https://www.axa.com.br/sou-cliente/contato-cliente/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/Azul-1.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 703 0203</p>
+                            </div>
+                            <a href="https://www.azulseguros.com.br/fale-com-a-azul/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/10/Banestes-webp.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 727 0474</p>
+                            </div>
+                            <a href="https://wwws.banestes.com.br/formularios_consultas/atendimento/index_faleconosco.htm">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/BKL-Seguros-Brasil.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 770  0797</p>
+                            </div>
+                            <a href="https://www.berkley.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/bradescoseguros.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 701 2757</p>
+                            </div>
+                            <a href="http://www.bradescoseguros.com.br/wps/portal/TransforDigital/Site/Inicio">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/bv_financeira-webp.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 770 3335</p>
+                            </div>
+                            <a href="https://www.bv.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/capermisa.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 723 3030</p>
+                            </div>
+                            <a href="https://www.capemisa.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/centauro-on-1.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 771 5484</p>
+                            </div>
+                            <a href="http://www.centauro-on.com.br/contato/sac">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/Cesce.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>11 2135 2450</p>
+                            </div>
+                            <a href="http://www.cescebrasil.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/chubb.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 703 6665</p>
+                            </div>
+                            <a href="https://www2.chubb.com/br-pt/contact/contact.aspx">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/10/Consclic.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 602 9080</p>
+                            </div>
+                            <a href="https://www.consclic.com.br/index.html">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/essor.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 521 1007</p>
+                            </div>
+                            <a href="http://www.essor.com.br/atendimento-ao-segurado/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/excelcior-2.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>81 3087 9200</p>
+                            </div>
+                            <a href="http://www.excelsiorseguros.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/Fairfax-1.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 770 2135</p>
+                            </div>
+                            <a href="https://www.fairfax.com.br/#/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/Fator.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 770 7229</p>
+                            </div>
+                            <a href="https://www.fator.com.br/bem_vindo/atendimento/sac.html">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/Logo-GEO.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>51 3135 8872</p>
+                            </div>
+                            <a href="https://www.geodigital.tech/pt/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/hdi-1.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 434 4340</p>
+                            </div>
+                            <a href="https://www.hdiseguros.com.br/#perguntas-frequentes">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/05/Icatu1.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>88 6542-9878</p>
+                            </div>
+                            <a href="https://www.parceiro.com.br">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/itau-webp.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 728 0728</p>
+                            </div>
+                            <a href="https://www.itau.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/junto-seguros-1.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 704 0301</p>
+                            </div>
+                            <a href="https://www.juntoseguros.com/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/kovr-webp.png" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 646 8378</p>
+                            </div>
+                            <a href="https://kovr.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/livonius.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>51 3224 8555</p>
+                            </div>
+                            <a href="https://livoniusmga.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/logo-mag.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 881 3355</p>
+                            </div>
+                            <a href="https://www.mag.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/mapfre.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 775 4545</p>
+                            </div>
+                            <a href="https://www.mapfre.com.br/seguro-br/atendimento/nossos-telefones/nossos-telefones/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/mbm.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 541 2555</p>
+                            </div>
+                            <a href="https://mbmseguros.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/metlife-2.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 638 5433</p>
+                            </div>
+                            <a href="https://www.metlife.com.br/suporte-e-servicos/contato/clientes-e-nao-clientes/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/msig-webp.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 773 6744</p>
+                            </div>
+                            <a href="http://www.msig.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/Notredame.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 015 3855</p>
+                            </div>
+                            <a href="https://www.gndi.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2024/05/ODONTOPREV.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 702 9000</p>
+                            </div>
+                            <a href="https://www.odontoprev.com.br/fale-conosco">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/omintsaude-webp.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 726 4000</p>
+                            </div>
+                            <a href="https://www.omint.com.br/planos-de-saude/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/omintvida-webp.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 726 4115</p>
+                            </div>
+                            <a href="https://www.omint.com.br/seguro-vida/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/pasi-webp.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 703 6302</p>
+                            </div>
+                            <a href="https://www.pasi.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/porto-webp.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 727 0800</p>
+                            </div>
+                            <a href="https://www.portoseguro.com.br/fale-conosco/contatos/telefones-e-sac">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/Potttencial-logo.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 606 7688</p>
+                            </div>
+                            <a href="https://www.pottencial.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/Prevent-logo.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 591 1156</p>
+                            </div>
+                            <a href="http://preventsenior.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2024/05/Prudential.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>21 3003 7783</p>
+                            </div>
+                            <a href="https://www.prudential.com.br/canais-de-atendimento">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2024/05/Sancor.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 200 0393</p>
+                            </div>
+                            <a href="https://www.sancorseguros.com.br/numeros-uteis">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/sompov2.jpg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 771 9119</p>
+                            </div>
+                            <a href="https://sompo.com.br/contato/assistencias-24-horas/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/SUHAI.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 327 8424</p>
+                            </div>
+                            <a href="https://suhaiseguradora.com/contato/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2024/05/SUICA.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 942 8774</p>
+                            </div>
+                            <a href="https://www.suicaseguradora.com.br/contact">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/sulamerica.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 777 1012</p>
+                            </div>
+                            <a href="https://portal.sulamericaseguros.com.br/canaisdeatendimento/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/sura.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 704 9399</p>
+                            </div>
+                            <a href="https://www.segurossura.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/swiss.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 008 9756</p>
+                            </div>
+                            <a href="http://www.swissre.com/corporate_solutions/brasil_seguros/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/tokio-marine.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 31 86546</p>
+                            </div>
+                            <a href="https://www.tokiomarine.com.br/atendimento/#telefones">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/Unimed-1.png" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 016 6633</p>
+                            </div>
+                            <a href="https://www.segurosunimed.com.br/canais-de-atendimento">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2024/05/VITALCARD.webp" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 600 5058</p>
+                            </div>
+                            <a href="https://www.vitalcard.com.br/">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/Yelum.png" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 701 4120</p>
+                            </div>
+                            <a href="https://www.libertyseguros.com.br/Pages/atendimento/nossos-telefones.aspx">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                    <div class="swiper-slide">
+                        <div class="box">
+                            <div class="logo">
+                                <img src="https://liencorretora.com.br/wp-content/uploads/2023/08/zurich.svg" alt="logo parceiro">
+                            </div>
+                            <div class="box-text">
+                                <p>0800 729 1400</p>
+                            </div>
+                            <a href="https://www.zurich.com.br/pt-br/atendimento">
+                                <div class="cta red">Ir ao site</div>            
+                            </a>
+                        </div>                    
+                    </div>
+                                     
+            </div>
+
+        </div>
+        <div class="box-pagination">
+            <div class="box-internal">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Parceiros -->
+
+<section id="contato">
+    <div class="container">
+        <div class="row">
+            <h1 class="title"><span>Contato</span></h1>
+            <h2 class="subtitle">Quer falar conosco? É só nos enviar uma <br> mensagem, pelo formulário abaixo. </h2>
+            <form id="form-contact" action="https://formspree.io/f/xdkkerql" method="POST">
+                <input name="name" type="text" id="contact-name" placeholder="Nome" required>
+                <input name="email" type="email" id="contact-email" placeholder="Email" required class="w50">
+                <input name="phone" type="tel" id="contact-phone" placeholder="Telefone" required class="w50">
+                <textarea name="message" id="contact-message" placeholder="Mensagem" required></textarea>
+                <div class="box-messages">
+                    <div class="tks-msg"><div class="cta red">Registrado com sucesso!</div></div>
+                    <button class="lien-button btn-send-contact">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <section id="" class="cta-franchise p-t-64 p-b-64">
+        <div class="container box-cta ">
+            <h2 class="title empty-margin-top t-center c_black_dark">
+                <span>LIEN Corretora:</span> Garantia de um futuro seguro            </h2>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="left-panel">
+                <div class="">
+                    <img class="logo-abf" src="https://primoratec.com.br/wp-content/themes/acstheme/assets/images/lien-abf-footer.svg" alt="Logo ABF"/>
+                    <p>© 2015 - 2024 - LIEN Corretora.</p>
+                </div>
+            </div>
+            <div class="center-panel">
+                                <a href="https://api.whatsapp.com/send/?phone=553398606659&text&type=phone_number&app_absent=0&amp;text=Olá" target="_blank">
+                    <img style="width: 80px;height: 80px;" src="https://i.imgur.com/3RDYI13.jpeg" alt="Contato LIEN">
+                    <p style="margin-top: 1em;">WhatsApp </p>
+                </a>
+            </div>
+            <div class="right-panel">
+                <img class="logo-footer-lien" src="https://primoratec.com.br/wp-content/themes/acstheme/assets/images/lien-footer-logo.svg" alt="Logo footer Lien"/>
+                <a href="https://www.google.com.br/maps/place/LIEN+Corretora/@-23.1838715,-50.648164,18z/data=!4m6!3m5!1s0x94f0908fac9c5ab3:0x65dd1e63c188f985!8m2!3d-23.1841017!4d-50.6475427!16s%2Fg%2F11bw4f7hf3?entry=ttu" target="_blank">
+                    <p>Rua Colombo, 469 - Centro, Cornélio Procópio - Paraná</p>
+                </a>
+                <a href="tel:3398606659">
+                    <p>(33) 3523-0003</p>
+                </a>
+                <div class="social">
+                    <a href="https://www.facebook.com/LIENCorretoraoficial/">
+                        <img style="width: 16px;height: 16px;margin: 10px 5px 0 -5px;" src="https://primoratec.com.br/wp-content/themes/acstheme/assets/images/facebook.svg" alt="Facebook"/>
+                    </a>
+                    <a href="https://www.instagram.com/lien.corretoradeseguros/">
+                        <img style="width: 16px;height: 16px;margin: 10px 5px 0 -5px;" src="https://primoratec.com.br/wp-content/themes/acstheme/assets/images/instagram.svg" alt="Instagran"/>
+                    </a>
+                </div>
+            </div>  
+        </div>      
+    </footer>
+    <style id='core-block-supports-inline-css' type='text/css'>
+/**
+ * Core styles: block-supports
+ */
+
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js?ver=1.0" id="acs-script-jquery-js"></script>
+<script type="text/javascript" src="https://primoratec.com.br/wp-content/themes/acstheme/assets/js/script.js?ver=1.0" id="acs-script-js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?ver=1.0" id="acs-script-swipper-js"></script>
+    <style>
+        html {
+            /* margin-top: 0px !important; */
+        }
+    </style>
+</body>
+</html><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js" integrity="sha512-efAcjYoYT0sXxQRtxGY37CKYmqsFVOIwMApaEbrxJr4RwqVVGw8o+Lfh/+59TU07+suZn1BWq4fDl5fdgyCNkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $('.card-prod-serv a[href^="#"], .banner-rotate a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        var id = $(this).attr('href'),
+                targetOffset = $(id).offset().top;
+                
+        $('html, body').animate({ 
+            scrollTop: targetOffset - 100
+        }, 500);
+    });
+
+    function scrollSlow(e) {
+        var id = e.attr('href'),
+                targetOffset = $(id).offset().top;
+                
+        $('html, body').animate({ 
+            scrollTop: targetOffset - 100
+        }, 500);
+    }
+    
+    $('.menu-container a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+        scrollSlow($(this));   
+        $(".hamburguer").click()      
+    });
+
+    var swiper = new Swiper(".swipper-header", {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            /* renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + "</span>";
+            }, */
+        },
+        navigation: {
+            nextEl: ".swipper-header .swiper-button-next",
+            prevEl: ".swipper-header .swiper-button-prev",
+        },
+    });
+
+    var swiper = new Swiper(".mySwiper", 
+        {
+            slidesPerView: 1,
+            loop: true,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            grid: {
+                rows: 2,
+            },
+            spaceBetween: 20,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // Responsive breakpoints
+            breakpoints: {
+                440: {
+                    slidesPerView: 2
+                },
+                640: {
+                    slidesPerView: 3
+                },
+                1024: {
+                    slidesPerView: 4,
+                }
+            }
+        }
+    );
+    
+    var swiper2  = new Swiper(".swiper-grid-card", {
+        slidesPerView: 4,
+        nav: true,
+        autoplay: true,
+        loop: true,
+
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 0,
+        
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: ".swiper-grid-card .swiper-button-next",
+            prevEl: ".swiper-grid-card .swiper-button-prev",
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            50: {
+                slidesPerView: 1
+            },
+            440: {
+                slidesPerView: 2
+            },
+            640: {
+                slidesPerView: 3
+            },
+            1024: {
+                slidesPerView: 4,
+            }
+        }
+    });
+
+    var swiper = new Swiper(".productSwiper", {
+        // cssMode: true,
+        nav: true,
+        autoplay: true,
+        loop: true,
+
+        navigation: {
+            nextEl: ".productSwiper .swiper-button-next",
+            prevEl: ".productSwiper .swiper-button-prev",
+        },
+        pagination: {
+            el: ".productSwiper .swiper-pagination",
+            clickable: true,
+        },
+        mousewheel: true,
+        keyboard: true,
+    });
+
+    document.getElementById('form-contact').addEventListener('submit', function(event) {
+                event.preventDefault();
+                var form = this;
+                form.querySelector('.tks-msg').style.display = 'flex'; // Mostra a mensagem de envio
+
+                fetch(form.action, {
+                    method: form.method,
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        // Limpa o formulário e mostra uma mensagem de sucesso
+                        form.innerHTML = '<div class="tks-msg"><div class="cta red">Registrado com sucesso!</div></div>';
+                    } else {
+                        throw new Error('Erro ao enviar a mensagem');
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    // Mostra uma mensagem de erro
+                    form.innerHTML += '<div class="error-msg"><div class="cta red">Erro ao enviar a mensagem.</div></div>';
+                });
+            });
+    
+</script>
